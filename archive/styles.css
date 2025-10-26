@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Pentameter Regular';
+    src: url(fonts/Pentameter-Wide-Regular-Trial.woff);
+}
+
+@font-face {
+    font-family: 'Pentameter Light';
+    src: url(fonts/Pentameter-Wide-Light-Trial.woff);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url(fonts/HelveticaNeue-Light.woff);
+    src: url(fonts/HelveticaNeue-Light.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url(fonts/HelveticaNeue-Bold.woff);
+    src: url(fonts/HelveticaNeue-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url(fonts/HelveticaNeue-Medium.woff);
+    src: url(fonts/HelveticaNeue-Medium.woff2);
+}
+
+
+body {
+    font-family: 'Helvetica Neue Light';
+    background-color: #f1f1f1;
+    color: black;
+    width: 450px;
+    margin: auto;
+}
+
+.everything {}
+
+.welcome {
+    padding-top: 100px;
+    display: flex;
+}
+
+.welcome h1 {
+    font-family: 'Pentameter Regular';
+    font-size: 2rem;
+    margin: 0;
+}
+
+.filter-button {
+    display: flex;
+    justify-content: end;
+}
+
+.dropbtn {
+    font-family: Pentameter Regular;
+    color: black;
+    display: inline-block;
+    border: 1px solid black;
+    letter-spacing: 0.1px;
+    border-radius: 8px;
+    padding: 5px 7px;
+    transition: all ease 0.15s;
+    margin-bottom: 20px;
+
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    border: 1px solid black;
+}
+
+.dropdown {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    text-decoration: underline;
+}
+
+.filterDiv {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+.index-list a {
+    font-family: 'Helvetica Neue Light';
+    display: grid;
+    grid-template-columns: minmax(4em, 4fr) minmax(7em, 3fr) minmax(3em, 1fr) 1fr;
+    align-items: baseline;
+    column-gap: 1.5em;
+    color: black;
+    font-size: 1rem;
+}
+
+.index-list {
+    border-top: .75px solid black;
+    margin-top: 2em;
+    line-height: inherit;
+}
+
+.index-list p {}
+
+a {
+    text-decoration: none;
+    padding: 0%;
+}
+
+a:visited {
+    color: black;
+}
+
+p {
+    margin: 0%;
+}
+
+ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* .hover-image-container {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+    border: 1px solid black;
+} */
+
+.accordion_container {
+    border-bottom: 1px solid black !important;
+}
+
+.accordion_head {
+    color: black;
+    cursor: pointer;
+    margin: 0%;
+}
+
+.accordion_head a:hover {
+    background-color: black;
+    color: #f1f1f1;
+}
+
+.accordion_body {
+    border-top: .75px solid black;
+    padding-bottom: 20px;
+}
+
+.accordion_body p {
+    padding: 18px 5px;
+    margin: 0px;
+    font-size: 1rem;
+}
+
+a.button {
+    display: inline-block;
+    color: black;
+    border: 1px solid black !important;
+    letter-spacing: 0.1px;
+    border-radius: 8px;
+    padding: 5px 7px;
+    transition: all ease 0.15s;
+    margin-bottom: 3px;
+    font-size: 1rem;
+}
+
+a.button:hover {
+    border: .75px solid black !important;
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .eyeflower{
+        width: 40%;
+        padding-bottom: 30px;
+    }
+
+    .welcome{
+        padding-top: 100px;
+        display: block;
+    }
+
+    .welcome h1 {
+        font-family: 'Pentameter Regular';
+        font-size: 2rem;
+        margin: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .index-list a {
+        font-size: 1rem;
+    }
+
+    .accordion_body p {
+        font-size: 1rem;
+    }
+
+    a.button {
+        font-size: 1rem;
+    }
+
+    .header-img{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    body {
+        width: 80%;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    .welcome{
+        padding-top: 50px;
+        display: block;
+    }
+
+    .welcome h1 {
+        font-size: 2rem;
+    }
+}

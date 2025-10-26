@@ -1,0 +1,156 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>handmade dataset</title>
+
+
+    <script src="libraries/p5.js"></script>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+        integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous">
+    </script>
+
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Inconsolata', monospace;
+            color: aliceblue;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        span {
+            font-size: 16px;
+        }
+
+        input {
+            font-family: 'Inconsolata', monospace;
+            color: aliceblue;
+            outline: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        input[type=text] {
+            font-size: 16px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid aliceblue;
+            width: 600px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        pre {
+            font-family: 'Inconsolata', monospace;
+            font-size: 16px;
+        }
+
+        #momentDiv {
+            position: fixed;
+            top: 50px;
+            left: 50px;
+        }
+
+        #instructions {
+            position: fixed;
+            bottom: 50px;
+            left: 50px;
+            width: 40%;
+            margin: 0;
+        }
+
+
+        button {
+            font-family: 'Inconsolata', monospace;
+            font-size: 16px;
+            width: 100px;
+            position: fixed;
+            text-align: center;
+            top: 160px;
+            left: 50px;
+            color: black;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        @media only screen and (max-width: 1080px) {
+
+            body {
+                font-style: bold;
+
+            }
+
+            p {
+                font-size: 8px;
+            }
+
+            span {
+                font-size: 8px;
+            }
+
+            button {
+                font-size: 8px;
+                top: 200px;
+                left: 25px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+
+            input[type=text] {
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid aliceblue;
+                width: 200px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+
+
+            #momentDiv {
+                background-color: black;
+                top: 25px;
+                left: 25px;
+            }
+
+            #instructions {
+                background-color: black;
+                bottom: 25px;
+                left: 25px;
+                width: 350px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sketch"></div>
+    <div id="momentDiv"></div>
+    <div id="instructions">
+            <p>This is a space to create a handmade dataset to describe a moment with a lover. <br>
+            You can open this page from anywhere in the world to share in real time. <br>
+            Your input will be their output and vice versa.<br>
+            Click around to build a shard of memory. <br>
+            Enter handmade data by filling in the blanks and hitting enter.<br><br>
+            This is currently installed at Axis Gallery in Sacramento. <br>
+            Should you chose to click "print" while the host computer in the gallery is awake, your moment will <em>physically</em> eject and archive your moment via inkjet printer.<br>
+            It will be realized in the form of a printed sheet of paper onto the floor of the gallery.</p>
+    </div>
+    <div id="#printBtn"><button id="#printBtn" onclick="display()">print</button></div>
+</body>
+<script src="sketch.js"></script>
+<script src="delaunay.js"></script>
+<script src="utils.js"></script>
+
+</html>

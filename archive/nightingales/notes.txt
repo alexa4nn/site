@@ -1,0 +1,9 @@
+to open on your computer:
+
+1. download nightingales folder onto your desktop
+2. open index.html in browser by double clicking
+3. view > fullscreen to view in fullscreen
+
+computer display settings:
+
+1. go into computer battery saving settings and select sleep mode to "never"

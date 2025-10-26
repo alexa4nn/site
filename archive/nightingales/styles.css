@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'helvetica';
+    src: url(fonts/helveticaneueltstd-th-webfont.woff);
+    src: url(fonts/helveticaneueltstd-th-webfont.woff2);
+}
+
+@font-face {
+    font-family: 'pentameter';
+    src: url(fonts/pentameter-vf-trial-webfont.woff);
+    src: url(fonts/pentameter-vf-trial-webfont.woff2);
+}
+
+
+
+
+body{
+    background-color: black;
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: pentameter;
+}
+
+#iloveyou {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+img{
+    position: relative;
+    top: -30px;
+    width: 800px;
+}
+
+#instructions{
+    position: absolute;
+    bottom: 20px;
+    width: 500px;
+    text-align: center;
+    font-size: 14px;
+}
+
+audio{
+    display: none;
+}
+
+::selection {
+    background-color: #000000;
+}

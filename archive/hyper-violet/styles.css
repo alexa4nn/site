@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "lunchtype light condensed";
+    src: url(fonts/lunchtype25-light_condensed-webfont.woff);
+    src: url(fonts/lunchtype25-light_condensed-webfont.woff2);
+}
+
+body{
+    background-color: black;
+    font-family: "lunchtype light condensed";
+    color: white;
+    font-size: 30px;
+}

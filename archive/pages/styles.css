@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Pentameter Regular';
+    src: url(../fonts/Pentameter-Wide-Regular-Trial.woff);
+}
+
+@font-face {
+    font-family: 'Pentameter Light';
+    src: url(../fonts/Pentameter-Wide-Light-Trial.woff);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url(../fonts/HelveticaNeue-Light.woff);
+    src: url(../fonts/HelveticaNeue-Light.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url(../fonts/HelveticaNeue-Bold.woff);
+    src: url(../fonts/HelveticaNeue-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url(../fonts/HelveticaNeue-Medium.woff);
+    src: url(../fonts/HelveticaNeue-Medium.woff2);
+}
+
+body {
+    font-family: 'Helvetica Neue Light';
+    background-color: #f1f1f1;
+    color: black;
+    width: 700px;
+    margin: auto;
+    padding: 200px 0px;
+}
+
+p{
+    line-height: 2rem;
+}
+
+a{
+    color: black;
+}
+
+h1{
+    font-family:'Pentameter Regular';
+    font-size: 3rem;
+}
+
+h2{
+    font-family:'Pentameter Light';
+    margin: 50px 0px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+    list-style:none;  
+}
+
+#back{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+a:visited{
+    color: black;
+}
+
+img{
+    margin: 50px 0px 0px;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        width: 90%;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+
+    #back{
+        top: 20px;
+        left: 20px;
+    }
+}
